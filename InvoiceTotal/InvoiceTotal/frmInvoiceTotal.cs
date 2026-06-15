@@ -41,47 +41,55 @@ namespace InvoiceTotal
             //    discountPct = .1m;
             //}
 
-            switch (customerType)
+            //switch (customerType)
+            //{
+            //    case "R":
+            //        if (subtotal < 250)
+            //            discountPct = .0m;
+            //        else if (subtotal >= 250 && subtotal < 500)
+            //            discountPct = .25m;
+            //        else if (subtotal >= 500)
+            //            discountPct = .30m;
+            //        break;
+            //    //case "r":
+            //    //    if (subtotal < 250)
+            //    //        discountPct = .0m;
+            //    //    else if (subtotal >= 250 && subtotal < 500)
+            //    //        discountPct = .25m;
+            //    //    else if (subtotal >= 500)
+            //    //        discountPct = .30m;
+            //    //    break;
+            //    case "C":
+            //        if (subtotal > 0)
+            //            discountPct = .2m;
+            //        break;
+            //    //case "c":
+            //    //    if (subtotal > 0)
+            //    //        discountPct = .2m;
+            //    //    break;
+            //    case "T":
+            //        if (subtotal <= 500)
+            //            discountPct = .4m;
+            //        else
+            //            discountPct = .5m;
+            //        break;
+            //    //case "t":
+            //    //    if (subtotal <= 500)
+            //    //        discountPct = .4m;
+            //    //    else
+            //    //        discountPct = .5m;
+            //    //    break;
+            //    default:
+            //        discountPct = .1m;
+            //        break;
+
+            discountPct = customerType switch
             {
-                case "R":
-                    if (subtotal < 250)
-                        discountPct = .0m;
-                    else if (subtotal >= 250 && subtotal < 500)
-                        discountPct = .25m;
-                    else if (subtotal >= 500)
-                        discountPct = .30m;
-                    break;
-                //case "r":
-                //    if (subtotal < 250)
-                //        discountPct = .0m;
-                //    else if (subtotal >= 250 && subtotal < 500)
-                //        discountPct = .25m;
-                //    else if (subtotal >= 500)
-                //        discountPct = .30m;
-                //    break;
-                case "C":
-                    if (subtotal > 0)
-                        discountPct = .2m;
-                    break;
-                //case "c":
-                //    if (subtotal > 0)
-                //        discountPct = .2m;
-                //    break;
-                case "T":
-                    if (subtotal <= 500)
-                        discountPct = .4m;
-                    else
-                        discountPct = .5m;
-                    break;
-                //case "t":
-                //    if (subtotal <= 500)
-                //        discountPct = .4m;
-                //    else
-                //        discountPct = .5m;
-                //    break;
-                default:
-                    discountPct = .1m;
-                    break;
+                "R" => 0.3m,
+                "C" => 0.2m,
+                "T" => 0.5m,
+                _ => 0.1m
+            };
             }
 
 
