@@ -13,34 +13,33 @@ namespace InvoiceTotal
             decimal subtotal = Convert.ToDecimal(txtSubtotal.Text);
             decimal discountPct = 0m;
 
-            if (customerType == "r")
-            {
-
-                if (subtotal < 250)
-                    discountPct = .0m;
-                else if (subtotal >= 250 && subtotal < 500)
-                    discountPct = .25m;
-                else if (subtotal >= 500)
-                    discountPct = .30m;
-            }
-            else if (customerType == "c")
-            {
-                if (subtotal > 0)
-                    discountPct = .2m;
-                //else
-                //    discountPct = .3m;
-            }
-            else if (customerType == "r")
-            {
-                if (subtotal <= 500)
-                    discountPct = .4m;
-                else
-                    discountPct = .5m;
-            }
-            else
-            {
-                discountPct = .1m;
-            }
+            //if (customerType == "r")
+            //{
+            //    if (subtotal < 250)
+            //        discountPct = .0m;
+            //    else if (subtotal >= 250 && subtotal < 500)
+            //        discountPct = .25m;
+            //    else if (subtotal >= 500)
+            //        discountPct = .30m;
+            //}
+            //else if (customerType == "c")
+            //{
+            //    if (subtotal > 0)
+            //        discountPct = .2m;
+            //    //else
+            //    //    discountPct = .3m;
+            //}
+            //else if (customerType == "t")
+            //{
+            //    if (subtotal <= 500)
+            //        discountPct = .4m;
+            //    else
+            //        discountPct = .5m;
+            //}
+            //else
+            //{
+            //    discountPct = .1m;
+            //}
 
             switch (customerType)
             {
@@ -52,11 +51,29 @@ namespace InvoiceTotal
                     else if (subtotal >= 500)
                         discountPct = .30m;
                     break;
+                case "r":
+                    if (subtotal < 250)
+                        discountPct = .0m;
+                    else if (subtotal >= 250 && subtotal < 500)
+                        discountPct = .25m;
+                    else if (subtotal >= 500)
+                        discountPct = .30m;
+                    break;
                 case "C":
                     if (subtotal > 0)
                         discountPct = .2m;
                     break;
+                case "c":
+                    if (subtotal > 0)
+                        discountPct = .2m;
+                    break;
                 case "T":
+                    if (subtotal <= 500)
+                        discountPct = .4m;
+                    else
+                        discountPct = .5m;
+                    break;
+                case "t":
                     if (subtotal <= 500)
                         discountPct = .4m;
                     else
