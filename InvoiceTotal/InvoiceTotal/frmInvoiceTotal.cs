@@ -82,7 +82,7 @@ namespace InvoiceTotal
             //    default:
             //        discountPct = .1m;
             //        break;
-
+            //}
             discountPct = customerType switch
             {
                 "R" => 0.3m,
@@ -90,10 +90,8 @@ namespace InvoiceTotal
                 "T" => 0.5m,
                 _ => 0.1m
             };
-            }
 
-
-                decimal discountAmt = subtotal * discountPct;
+            decimal discountAmt = subtotal * discountPct;
             decimal invoiceTotal = subtotal - discountAmt;
 
             txtDiscountPct.Text = discountPct.ToString("p1");
