@@ -15,12 +15,13 @@ namespace InvoiceTotal
 
             if (customerType == "R")
             {
-                if (subtotal < 100)
+
+                if (subtotal < 250)
                     discountPct = .0m;
-                else if (subtotal >= 100 && subtotal < 250)
-                    discountPct = .1m;
-                else if (subtotal >= 250)
+                else if (subtotal >= 250 && subtotal < 500)
                     discountPct = .25m;
+                else if (subtotal >= 500)
+                    discountPct = .30m;
             }
             else if (customerType == "C")
             {
@@ -47,6 +48,11 @@ namespace InvoiceTotal
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmInvoiceTotal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

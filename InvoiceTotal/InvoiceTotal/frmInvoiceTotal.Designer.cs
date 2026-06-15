@@ -28,155 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtSubtotal = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtDiscountPct = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDiscountAmt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTotal = new System.Windows.Forms.TextBox();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCustomerType = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            label1 = new Label();
+            txtSubtotal = new TextBox();
+            label2 = new Label();
+            txtDiscountPct = new TextBox();
+            label3 = new Label();
+            txtDiscountAmt = new TextBox();
+            label4 = new Label();
+            txtTotal = new TextBox();
+            btnCalculate = new Button();
+            btnExit = new Button();
+            label5 = new Label();
+            txtCustomerType = new TextBox();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "&Subtotal:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label1.AutoSize = true;
+            label1.Location = new Point(24, 63);
+            label1.Name = "label1";
+            label1.Size = new Size(68, 20);
+            label1.TabIndex = 2;
+            label1.Text = "&Subtotal:";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtSubtotal
             // 
-            this.txtSubtotal.Location = new System.Drawing.Point(131, 44);
-            this.txtSubtotal.Name = "txtSubtotal";
-            this.txtSubtotal.Size = new System.Drawing.Size(100, 23);
-            this.txtSubtotal.TabIndex = 3;
+            txtSubtotal.Location = new Point(150, 59);
+            txtSubtotal.Margin = new Padding(3, 4, 3, 4);
+            txtSubtotal.Name = "txtSubtotal";
+            txtSubtotal.Size = new Size(114, 27);
+            txtSubtotal.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Discount Percent:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label2.AutoSize = true;
+            label2.Location = new Point(24, 101);
+            label2.Name = "label2";
+            label2.Size = new Size(122, 20);
+            label2.TabIndex = 2;
+            label2.Text = "Discount Percent:";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtDiscountPct
             // 
-            this.txtDiscountPct.Location = new System.Drawing.Point(131, 73);
-            this.txtDiscountPct.Name = "txtDiscountPct";
-            this.txtDiscountPct.ReadOnly = true;
-            this.txtDiscountPct.Size = new System.Drawing.Size(100, 23);
-            this.txtDiscountPct.TabIndex = 3;
-            this.txtDiscountPct.TabStop = false;
+            txtDiscountPct.Location = new Point(150, 97);
+            txtDiscountPct.Margin = new Padding(3, 4, 3, 4);
+            txtDiscountPct.Name = "txtDiscountPct";
+            txtDiscountPct.ReadOnly = true;
+            txtDiscountPct.Size = new Size(114, 27);
+            txtDiscountPct.TabIndex = 3;
+            txtDiscountPct.TabStop = false;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Discount Amount:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label3.AutoSize = true;
+            label3.Location = new Point(24, 140);
+            label3.Name = "label3";
+            label3.Size = new Size(127, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Discount Amount:";
+            label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtDiscountAmt
             // 
-            this.txtDiscountAmt.Location = new System.Drawing.Point(131, 102);
-            this.txtDiscountAmt.Name = "txtDiscountAmt";
-            this.txtDiscountAmt.ReadOnly = true;
-            this.txtDiscountAmt.Size = new System.Drawing.Size(100, 23);
-            this.txtDiscountAmt.TabIndex = 5;
-            this.txtDiscountAmt.TabStop = false;
+            txtDiscountAmt.Location = new Point(150, 136);
+            txtDiscountAmt.Margin = new Padding(3, 4, 3, 4);
+            txtDiscountAmt.Name = "txtDiscountAmt";
+            txtDiscountAmt.ReadOnly = true;
+            txtDiscountAmt.Size = new Size(114, 27);
+            txtDiscountAmt.TabIndex = 5;
+            txtDiscountAmt.TabStop = false;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 134);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Total:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label4.AutoSize = true;
+            label4.Location = new Point(24, 179);
+            label4.Name = "label4";
+            label4.Size = new Size(45, 20);
+            label4.TabIndex = 6;
+            label4.Text = "Total:";
+            label4.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(131, 131);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(100, 23);
-            this.txtTotal.TabIndex = 7;
-            this.txtTotal.TabStop = false;
+            txtTotal.Location = new Point(150, 175);
+            txtTotal.Margin = new Padding(3, 4, 3, 4);
+            txtTotal.Name = "txtTotal";
+            txtTotal.ReadOnly = true;
+            txtTotal.Size = new Size(114, 27);
+            txtTotal.TabIndex = 7;
+            txtTotal.TabStop = false;
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(64, 171);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 4;
-            this.btnCalculate.Text = "&Calculate";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            btnCalculate.Location = new Point(73, 228);
+            btnCalculate.Margin = new Padding(3, 4, 3, 4);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(86, 31);
+            btnCalculate.TabIndex = 4;
+            btnCalculate.Text = "&Calculate";
+            btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += btnCalculate_Click;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(156, 171);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 5;
-            this.btnExit.Text = "E&xit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            btnExit.Location = new Point(178, 228);
+            btnExit.Margin = new Padding(3, 4, 3, 4);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(86, 31);
+            btnExit.TabIndex = 5;
+            btnExit.Text = "E&xit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 15);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Customer Type:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label5.AutoSize = true;
+            label5.Location = new Point(24, 24);
+            label5.Name = "label5";
+            label5.Size = new Size(110, 20);
+            label5.TabIndex = 0;
+            label5.Text = "Customer Type:";
+            label5.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtCustomerType
             // 
-            this.txtCustomerType.Location = new System.Drawing.Point(131, 15);
-            this.txtCustomerType.Name = "txtCustomerType";
-            this.txtCustomerType.Size = new System.Drawing.Size(100, 23);
-            this.txtCustomerType.TabIndex = 1;
+            txtCustomerType.Location = new Point(150, 20);
+            txtCustomerType.Margin = new Padding(3, 4, 3, 4);
+            txtCustomerType.Name = "txtCustomerType";
+            txtCustomerType.Size = new Size(114, 27);
+            txtCustomerType.TabIndex = 1;
             // 
             // frmInvoiceTotal
             // 
-            this.AcceptButton = this.btnCalculate;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(254, 210);
-            this.Controls.Add(this.txtCustomerType);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.txtTotal);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtDiscountAmt);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDiscountPct);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtSubtotal);
-            this.Controls.Add(this.label1);
-            this.Name = "frmInvoiceTotal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Invoice Total";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = btnCalculate;
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = btnExit;
+            ClientSize = new Size(290, 280);
+            Controls.Add(txtCustomerType);
+            Controls.Add(label5);
+            Controls.Add(btnExit);
+            Controls.Add(btnCalculate);
+            Controls.Add(txtTotal);
+            Controls.Add(label4);
+            Controls.Add(txtDiscountAmt);
+            Controls.Add(label3);
+            Controls.Add(txtDiscountPct);
+            Controls.Add(label2);
+            Controls.Add(txtSubtotal);
+            Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "frmInvoiceTotal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Invoice Total";
+            Load += frmInvoiceTotal_Load;
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
