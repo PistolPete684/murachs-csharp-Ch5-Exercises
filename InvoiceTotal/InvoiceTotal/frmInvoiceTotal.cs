@@ -43,27 +43,30 @@ namespace InvoiceTotal
             }
 
             switch (customerType)
+            {
                 case "R":
-                if (subtotal < 250)
-                    discountPct = .0m;
-                else if (subtotal >= 250 && subtotal < 500)
-                    discountPct = .25m;
-                else if (subtotal >= 500)
-                    discountPct = .30m;
-                break;
+                    if (subtotal < 250)
+                        discountPct = .0m;
+                    else if (subtotal >= 250 && subtotal < 500)
+                        discountPct = .25m;
+                    else if (subtotal >= 500)
+                        discountPct = .30m;
+                    break;
                 case "C":
-                if (subtotal > 0)
-                    discountPct = .2m;
-                break;
+                    if (subtotal > 0)
+                        discountPct = .2m;
+                    break;
                 case "T":
-                if (subtotal <= 500)
-                    discountPct = .4m;
-                else
-                    discountPct = .5m;
-                break;
-                default:
-                discountPct = .1m;
-                break;
+                    if (subtotal <= 500)
+                        discountPct = .4m;
+                    else
+                        discountPct = .5m;
+                    break;
+                //default:
+                //    discountPct = .1m;
+                //    break;
+            }
+
 
                 decimal discountAmt = subtotal * discountPct;
             decimal invoiceTotal = subtotal - discountAmt;
