@@ -30,9 +30,16 @@ namespace InvoiceTotal
                 //else
                 //    discountPct = .3m;
             }
+            else if (customerType == "T")
+            {
+                if (subtotal <= 500)
+                    discountPct = .4m;
+                else
+                    discountPct = .5m;
+            }
             else
             {
-                discountPct = .0m;
+                discountPct = .1m;
             }
 
             decimal discountAmt = subtotal * discountPct;
