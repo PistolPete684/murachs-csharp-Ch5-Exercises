@@ -120,23 +120,26 @@
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(120, 60);
             this.btnCalculate.TabIndex = 8;
-            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(190, 240);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(120, 60);
             this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
             // frmFutureValue
             // 
+            this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(372, 336);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
