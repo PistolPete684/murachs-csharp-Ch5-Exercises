@@ -112,6 +112,7 @@
             this.txtFutureValue.ReadOnly = true;
             this.txtFutureValue.Size = new System.Drawing.Size(100, 30);
             this.txtFutureValue.TabIndex = 7;
+            this.txtFutureValue.TabStop = false;
             // 
             // btnCalculate
             // 
