@@ -47,8 +47,9 @@
             this.label1.Location = new System.Drawing.Point(24, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 25);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 5;
             this.label1.Text = "Monthly Investment:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -57,8 +58,9 @@
             this.label2.Location = new System.Drawing.Point(24, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 25);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 6;
             this.label2.Text = "Yearly Interest Rate:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -67,8 +69,9 @@
             this.label3.Location = new System.Drawing.Point(24, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(164, 25);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 7;
             this.label3.Text = "Number of Years:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
@@ -77,8 +80,9 @@
             this.label4.Location = new System.Drawing.Point(24, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 25);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 8;
             this.label4.Text = "Future Value:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtMonthlyInvestment
             // 
@@ -86,7 +90,7 @@
             this.txtMonthlyInvestment.Location = new System.Drawing.Point(238, 30);
             this.txtMonthlyInvestment.Name = "txtMonthlyInvestment";
             this.txtMonthlyInvestment.Size = new System.Drawing.Size(100, 30);
-            this.txtMonthlyInvestment.TabIndex = 4;
+            this.txtMonthlyInvestment.TabIndex = 0;
             // 
             // txtYearlyInterestRate
             // 
@@ -94,7 +98,7 @@
             this.txtYearlyInterestRate.Location = new System.Drawing.Point(238, 78);
             this.txtYearlyInterestRate.Name = "txtYearlyInterestRate";
             this.txtYearlyInterestRate.Size = new System.Drawing.Size(100, 30);
-            this.txtYearlyInterestRate.TabIndex = 5;
+            this.txtYearlyInterestRate.TabIndex = 1;
             // 
             // txtNumberOfYears
             // 
@@ -102,7 +106,7 @@
             this.txtNumberOfYears.Location = new System.Drawing.Point(238, 125);
             this.txtNumberOfYears.Name = "txtNumberOfYears";
             this.txtNumberOfYears.Size = new System.Drawing.Size(100, 30);
-            this.txtNumberOfYears.TabIndex = 6;
+            this.txtNumberOfYears.TabIndex = 2;
             // 
             // txtFutureValue
             // 
@@ -111,7 +115,7 @@
             this.txtFutureValue.Name = "txtFutureValue";
             this.txtFutureValue.ReadOnly = true;
             this.txtFutureValue.Size = new System.Drawing.Size(100, 30);
-            this.txtFutureValue.TabIndex = 7;
+            this.txtFutureValue.TabIndex = 9;
             this.txtFutureValue.TabStop = false;
             // 
             // btnCalculate
@@ -120,7 +124,7 @@
             this.btnCalculate.Location = new System.Drawing.Point(53, 240);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(120, 60);
-            this.btnCalculate.TabIndex = 8;
+            this.btnCalculate.TabIndex = 3;
             this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             // 
@@ -131,9 +135,10 @@
             this.btnExit.Location = new System.Drawing.Point(190, 240);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(120, 60);
-            this.btnExit.TabIndex = 9;
+            this.btnExit.TabIndex = 4;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmFutureValue
             // 
