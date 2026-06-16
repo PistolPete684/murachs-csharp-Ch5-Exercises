@@ -27,10 +27,10 @@ namespace FutureValue
             decimal monthlyInvestment = Convert.ToDecimal(txtMonthlyInvestment.Text);
             decimal yearlyInterestRate = Convert.ToDecimal(txtYearlyInterestRate.Text);
             int numberOfYears = Convert.ToInt32(txtNumberOfYears.Text);
-            decimal futureValue = 0;
+            decimal futureValue = 0m;
 
-            decimal monthlyInterestRate = yearlyInterestRate / 12;
-            int numberOfMonths = numberOfYears / 12;
+            decimal monthlyInterestRate = yearlyInterestRate / 12 /100;
+            int numberOfMonths = numberOfYears * 12;
 
             for (int i = 0; i < numberOfMonths; i++)
             { 
@@ -38,7 +38,8 @@ namespace FutureValue
 
             }
 
-            txtFutureValue.Text = futureValue.ToString();
+            txtFutureValue.Text = futureValue.ToString("c");
+            txtMonthlyInvestment.Focus();
         }
     }
 }

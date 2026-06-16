@@ -114,7 +114,7 @@
             this.txtFutureValue.Location = new System.Drawing.Point(238, 172);
             this.txtFutureValue.Name = "txtFutureValue";
             this.txtFutureValue.ReadOnly = true;
-            this.txtFutureValue.Size = new System.Drawing.Size(100, 30);
+            this.txtFutureValue.Size = new System.Drawing.Size(210, 30);
             this.txtFutureValue.TabIndex = 9;
             this.txtFutureValue.TabStop = false;
             // 
@@ -147,7 +147,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(372, 336);
+            this.ClientSize = new System.Drawing.Size(515, 336);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtFutureValue);
